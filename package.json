@@ -1,0 +1,38 @@
+{
+  "name": "typescript-starter-template",
+  "version": "1.0.0",
+  "main": "dist/library.js",
+  "module": "lib/index.js",
+  "author": "Daiz <taneli.vatanen@gmail.com>",
+  "license": "CC0-1.0",
+  "config": {
+    "library": "Library",
+    "host": "localhost",
+    "port": "8080"
+  },
+  "scripts": {
+    "start": "webpack-serve webpack.config.js",
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@opentelemetry/context-zone": "^0.14.0",
+    "@opentelemetry/exporter-collector": "^0.14.0",
+    "@opentelemetry/plugin-document-load": "^0.12.0",
+    "@opentelemetry/tracing": "^0.14.0",
+    "@opentelemetry/web": "^0.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "awesome-typescript-loader": "^5.2.1",
+    "prettier": "^1.16.4",
+    "source-map-loader": "^0.2.4",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.1",
+    "typescript-tslint-plugin": "^0.3.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-serve": "^2.0.3",
+    "worker-loader": "^2.0.0"
+  }
+}
